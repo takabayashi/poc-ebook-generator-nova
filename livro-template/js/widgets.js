@@ -12,7 +12,23 @@ var widgetIcon = {
 			"height":52,
 			"pagina":1,
 			"type":"html",
-			"url":"http://www.uol.com.br",
-			"titulo":"Rotas Transaarianas (séc. I d. C.)"
-		}]
+			"url":"widgets/index.html?img=2",
+			"titulo":""
+		},
+		{
+			"defaultTopLocation":338,
+			"defaultLeftLocation":330,
+			"topLocation":0,
+			"leftLocation":0,
+			"width":52,
+			"height":52,
+			"pagina":1,
+			"type":"html",
+			"url":"widgets/index.html?img=1",
+			"titulo":""
+		}		
+		]
 }
+
+
+//window.location.search.substring(1).split('=')[1]

@@ -258,7 +258,8 @@ function loadImgPagina(paginaAtual){
 
 }
 
-function loadIFrame() {
+function loadIFrame(url) {
+	/*
 	for(x=0;x<widgetIcon.lista.length;x++){
 		var widget = widgetIcon.lista[x];
 		if(paginaAtual == widget.pagina){
@@ -267,23 +268,30 @@ function loadIFrame() {
 			break;
 		}
 	}
+	*/
+	document.getElementById("iframe_a").src = url;
+	iFrameAberto = true;
 }
 
 function loadWidgetLinks(paginaAtual, ratioLocal){
 	
 	if(livroAtual==1){
-		document.getElementById("divOED").style.display = "none";
-		document.getElementById("iconeOED").style.display = "none";
+		//document.getElementById("divOED").style.display = "none";
+		//document.getElementById("iconeOED").style.display = "none";
 		
 		for(x=0;x<widgetIcon.lista.length;x++){
 			var widget = widgetIcon.lista[x];
 			
 			if(paginaAtual == widget.pagina){
+								
 				widget.leftLocation = widget.defaultLeftLocation * ratioLocal;
 				widget.topLocation = widget.defaultTopLocation * ratioLocal;
 				widget.width = widgetIcon.defaultWidth * ratioLocal;
 				widget.height = widgetIcon.defaultHeight * ratioLocal;
 				
+				createDiv(widget.pagina, x, widget.topLocation, widget.leftLocation, widget.height, widget.width, widget.url);
+
+				/*
 				document.getElementById("divOED").style.top = canvas.offsetTop + widget.topLocation + 'px';
 				document.getElementById("divOED").style.left = canvas.offsetLeft  + widget.leftLocation + 'px';
 				
@@ -294,10 +302,39 @@ function loadWidgetLinks(paginaAtual, ratioLocal){
 				document.getElementById("iconeOED").style.display = "block";
 				
 				break;
+				*/
 			}
 		}
 	}
 	
+}
+
+function createDiv(page, id, top, left, height, width, url){
+	//cria div do widget
+	var newDiv = document.createElement("div");
+	newDiv.id = "divOED" + page + "-" + id;
+	newDiv.style.top = canvas.offsetTop + top + 'px';
+	newDiv.style.left = canvas.offsetLeft  + left + 'px';
+	newDiv.style.width = width + 'px';
+	newDiv.style.height = height + 'px';
+	newDiv.style.display = "block";
+	newDiv.style.position = "absolute";
+	newDiv.style.zIndex = 999;
+	newDiv.style.backgroundColor = "rgba(0,255,0,0.5)";
+
+	document.getElementById("divConteudo").appendChild(newDiv);
+	//--------------------------------------------------------
+
+	//cria tag a para o widget
+	var newTagA = document.createElement("a");
+	newTagA.id = "iconeOED" + page + "-" + id;
+	newTagA.href = "#divModalDialog";
+	newTagA.setAttribute("onclick","loadIFrame(url)");
+	newTagA.style.height = height +'px';
+	newTagA.style.width = width + 'px';
+	newTagA.style.display = "block";
+
+	document.getElementById(newDiv.id).appendChild(newTagA);
 }
 
 function go(valor) {

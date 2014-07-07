@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  </head>
+  <body>
+  	<img id="widgetId" src="" style="width: 512px; height: 512px;">
+  </body>
+  <script type="text/javascript">
+  	var widgetId = "";
+  	widgetId = window.location.search.substring(1).split('=')[1];
+  	console.log("widgetId: " + widgetId); 
+
+  	document.getElementById("widgetId").src = "images/" + widgetId + ".png";
+  </script>
+</html>

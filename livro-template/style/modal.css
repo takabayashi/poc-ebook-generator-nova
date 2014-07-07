@@ -3,6 +3,7 @@
 	width: 100%;
 	display: block;
 	border: none;
+	background-color: transparent;
 }
 
 #divContainer {
@@ -23,7 +24,8 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: #FFFFFF;
+	text-align: center;
+	background-color: transparent;
 	z-index: 99999;
 	opacity: 0;
 	-webkit-transition: opacity 400ms ease-in;
@@ -59,8 +61,8 @@
 	-moz-box-shadow: 1px 1px 3px #000;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
-	top: -10px;
-	right: -12px;
+	top: 113px;
+	left: 458px;
 	width: 24px;
 }
 
