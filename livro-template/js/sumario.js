@@ -1,0 +1,245 @@
+var sumario = {
+	"divStyleBackgroudColor":"rgba(0, 0, 0, 0.5)",
+	"defaultHeight":44,
+	"defaultWidth": 46,
+	
+	"itens":[
+		//navegacao laterak direita
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":0, "paginaTarget": 0},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":0, "paginaTarget": 1},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":0, "paginaTarget": 2},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":0, "paginaTarget": 3},
+		{"defaultTopLocation":626, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":0, "paginaTarget": 4},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":1, "paginaTarget": 0},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":1, "paginaTarget": 1},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":1, "paginaTarget": 2},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":1, "paginaTarget": 3},
+		{"defaultTopLocation":626, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":1, "paginaTarget": 4},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":2, "paginaTarget": 0},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":2, "paginaTarget": 1},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":2, "paginaTarget": 2},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":2, "paginaTarget": 3},
+		{"defaultTopLocation":626, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":2, "paginaTarget": 4},
+
+		{"defaultTopLocation":460, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":3, "paginaTarget": 0},
+		{"defaultTopLocation":499, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":3, "paginaTarget": 1},
+		{"defaultTopLocation":538, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":3, "paginaTarget": 2},
+		{"defaultTopLocation":579, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":3, "paginaTarget": 3},
+		{"defaultTopLocation":620, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":3, "paginaTarget": 4},
+
+		{"defaultTopLocation":460, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":4, "paginaTarget": 0},
+		{"defaultTopLocation":499, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":4, "paginaTarget": 1},
+		{"defaultTopLocation":538, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":4, "paginaTarget": 2},
+		{"defaultTopLocation":579, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":4, "paginaTarget": 3},
+		{"defaultTopLocation":620, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":4, "paginaTarget": 4},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":5, "paginaTarget": 5},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":5, "paginaTarget": 6},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":5, "paginaTarget": 7},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":5, "paginaTarget": 8},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":6, "paginaTarget": 5},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":6, "paginaTarget": 6},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":6, "paginaTarget": 7},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":6, "paginaTarget": 8},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":7, "paginaTarget": 5},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":7, "paginaTarget": 6},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":7, "paginaTarget": 7},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":7, "paginaTarget": 8},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":8, "paginaTarget": 5},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":8, "paginaTarget": 6},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":8, "paginaTarget": 7},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":8, "paginaTarget": 8},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":9, "paginaTarget": 9},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":9, "paginaTarget": 10},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":9, "paginaTarget": 11},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":9, "paginaTarget": 12},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":10, "paginaTarget": 9},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":10, "paginaTarget": 10},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":10, "paginaTarget": 11},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":10, "paginaTarget": 12},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":11, "paginaTarget": 9},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":11, "paginaTarget": 10},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":11, "paginaTarget": 11},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":11, "paginaTarget": 12},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":12, "paginaTarget": 9},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":12, "paginaTarget": 10},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":12, "paginaTarget": 11},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":12, "paginaTarget": 12},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":13, "paginaTarget": 13},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":13, "paginaTarget": 14},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":13, "paginaTarget": 15},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":13, "paginaTarget": 16},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":14, "paginaTarget": 13},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":14, "paginaTarget": 14},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":14, "paginaTarget": 15},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":14, "paginaTarget": 16},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":15, "paginaTarget": 13},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":15, "paginaTarget": 14},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":15, "paginaTarget": 15},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":15, "paginaTarget": 16},																																			
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":16, "paginaTarget": 13},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":16, "paginaTarget": 14},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":16, "paginaTarget": 15},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":16, "paginaTarget": 16},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":17, "paginaTarget": 17},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":17, "paginaTarget": 18},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":17, "paginaTarget": 19},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":17, "paginaTarget": 20},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":18, "paginaTarget": 17},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":18, "paginaTarget": 18},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":18, "paginaTarget": 19},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":18, "paginaTarget": 20},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":19, "paginaTarget": 17},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":19, "paginaTarget": 18},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":19, "paginaTarget": 19},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":19, "paginaTarget": 20},
+
+		{"defaultTopLocation":466, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":20, "paginaTarget": 17},
+		{"defaultTopLocation":505, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":20, "paginaTarget": 18},
+		{"defaultTopLocation":544, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":20, "paginaTarget": 19},
+		{"defaultTopLocation":585, "defaultLeftLocation":1419, "topLocation":0, "leftLocation":0, "width":23, "height":22, "pagina":20, "paginaTarget": 20},				
+
+		//navegacao lateral esquerda(navbar)
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":0, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":0, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":0, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":0, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":0, "paginaTarget": 17},
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":1, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":1, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":1, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":1, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":1, "paginaTarget": 17},
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":2, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":2, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":2, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":2, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":2, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":3, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":3, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":3, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":3, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":3, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":4, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":4, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":4, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":4, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":4, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":5, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":5, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":5, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":5, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":5, "paginaTarget": 17},
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":6, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":6, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":6, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":6, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":6, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":7, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":7, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":7, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":7, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":7, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":8, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":8, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":8, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":8, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":8, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":9, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":9, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":9, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":9, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":9, "paginaTarget": 17},
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":10, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":10, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":10, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":10, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":10, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":11, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":11, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":11, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":11, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":11, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":12, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":12, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":12, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":12, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":12, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":13, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":13, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":13, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":13, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":13, "paginaTarget": 17},
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":14, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":14, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":14, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":14, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":14, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":15, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":15, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":15, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":15, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":15, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":16, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":16, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":16, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":16, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":16, "paginaTarget": 17},		
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":17, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":17, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":17, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":17, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":17, "paginaTarget": 17},
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":18, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":18, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":18, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":18, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":18, "paginaTarget": 17},
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":19, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":19, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":19, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":19, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":19, "paginaTarget": 17},
+
+		{"defaultTopLocation":307, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":20, "paginaTarget": 0},
+		{"defaultTopLocation":393, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":20, "paginaTarget": 5},
+		{"defaultTopLocation":476, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":20, "paginaTarget": 9},
+		{"defaultTopLocation":560, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":20, "paginaTarget": 13},
+		{"defaultTopLocation":647, "defaultLeftLocation":1, "topLocation":0, "leftLocation":0, "width":278, "height":82, "pagina":20, "paginaTarget": 17},																										
+	]
+}

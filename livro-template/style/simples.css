@@ -1,0 +1,27 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../images/background.png);
+}
+
+#divPrincipal {
+	z-index: 0;
+}
+
+#canvasPagina {
+	z-index: 10;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.center {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+

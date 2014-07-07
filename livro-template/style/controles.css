@@ -1,0 +1,222 @@
+#divControles {
+    background-image: url("../images/controles/controle_anexo.png");
+    height: 351px;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    width: 100px;
+    z-index: 100;
+}
+
+
+#divControleOED {
+    background-image: url("../images/controles/controle_objetos.jpg");
+    height: 20px;
+    position: absolute;
+    left: 15px;
+    top: 100px;
+    width: 300px;
+    z-index: 100;
+}
+
+#divControleOED:hover{
+	cursor: pointer;
+}
+
+.linkListaOED {
+	line-height: 15px;
+	text-align: left;
+	text-decoration: none;
+	font-family: Helvetica;
+}
+
+#linkListaOED:link {
+	color:#000000
+}
+	
+#linkListaOED:hover {
+	color: rgb(135, 135, 135);
+} 
+
+#listaOrdenadaLinksOED{
+	background-color: #FFFFFF;
+}
+
+#listaOED{
+    position: absolute;
+    width: 500px;
+    top: 20px;
+}
+
+.controleHome{
+	height: 61px;
+    width: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.controleLeft{
+	height: 51px;
+    width: 50px;
+    position: absolute;
+    left: 0px;
+    top: 61px;
+}
+
+.controleRigth{
+	height: 51px;
+    width: 50px;
+    position: absolute;
+    right: 0px;
+    top: 61px;
+}
+
+.controleZoomOut{
+	height: 51px;
+    width: 50px;
+    position: absolute;
+    right: 0px;
+    top: 190px;
+}
+
+.controleZoomIn{
+	height: 51px;
+    width: 50px;
+    position: absolute;
+    left: 0px;
+    top: 190px;
+}
+
+.controleZoomFit{
+	height: 61px;
+    width: 100px;
+    position: absolute;
+    left: 0px;
+    top: 240px;
+}
+
+.controleLm{
+	height: 51px;
+    width: 50px;
+    position: absolute;
+    left: 0px;
+    top: 300px;
+}
+
+
+.controleMp{
+	height: 51px;
+    width: 50px;
+    position: absolute;
+    right: 0px;
+    top: 300px;
+}
+
+
+.controleQtdPaginas{
+	height: 20px;
+    width: 50px;
+    position: absolute;
+    left: 47px;
+    top: 169px;
+    font-size: medium;
+	color: #FFFFFF;
+	line-height: 20px;
+	position: inherit;
+	text-align: left;
+	text-decoration: none;
+	font-weight: bold;
+	z-index: 100;
+}
+
+.controlePaginaAtual{
+	height: 20px;
+    width: 50px;
+    position: absolute;
+    left: 28px;
+    top: 142px;
+}
+
+.controleNumPaginaAtual{
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: large;
+	color: #FFFFFF;
+	height: 18px;
+	width: 42px;
+	left: 0;
+	background-color: #000000;
+	border: none;
+	z-index: 100;
+}
+
+.controleHome:hover { 
+	background-image: url("../images/controles/home_rollover.png");
+	cursor: pointer; 	
+}
+
+.controleRigth:hover { 
+	background-image: url("../images/controles/right_rollover.png");
+	cursor: pointer; 	
+}
+
+.controleLeft:hover { 
+	background-image: url("../images/controles/left_rollover.png");
+	cursor: pointer; 	
+}
+
+.controleZoomIn:hover { 
+	background-image: url("../images/controles/zoomin_rollover.png"); 
+	cursor: pointer;
+}
+
+.controleZoomOut:hover { 
+	background-image: url("../images/controles/zoomout_rollover.png");
+	cursor: pointer;
+}
+
+.controleZoomFit:hover { 
+	background-image: url("../images/controles/restore_rollover.png");
+	cursor: pointer; 
+}
+
+.controleLm:hover { 
+	background-image: url("../images/controles/lm_rollover.png"); 
+	cursor: pointer;
+}
+
+.controleMp:hover { 
+	background-image: url("../images/controles/mp_rollover.png");
+	cursor: pointer;
+}
+
+.linkListaOED:hover { 
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.iconeManual{
+	height: 30px;
+	width: 30px;
+	display: block;
+}
+
+.divSumarioItem{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5); 
+	display: block;
+}
+
+.divSumarioItem:hover{
+	cursor: pointer;
+}
+
+.divSumario{
+	position: absolute;
+	background: rgba(0, 0, 0, 0); 
+	z-index: 11;
+	display: block;
+}
