@@ -252,6 +252,8 @@ function loadImgPagina(paginaAtual){
 	loadWidgetLinks(paginaAtual, ratio);
 	
 	loadSumario(paginaAtual, ratio);
+
+	loadSliders(paginaAtual, ratio);
 	
 	localStorage.ultimaPagina = paginaAtual;
 	localStorage.livroAtual = livroAtual;
@@ -492,5 +494,48 @@ function loadSumario(paginaAtual, ratioLocal){
 
 			}
 		}
+	}
+}
+
+function loadSliders(paginaAtual, ratioLocal){
+	
+	if(livroAtual==1){
+		$('.slider-div').css('display', 'none');
+		
+		$.each(window.sliders, function(index, object){
+			if(object.page == paginaAtual){
+				var slider = {
+					id: object.id,
+					page: object.page,
+					left: (canvas.offsetLeft + object.defaultLeft * ratioLocal),
+					top: (canvas.offsetTop + object.defaulttTop * ratioLocal),
+					width: object.defaultWidth * ratioLocal,
+					height: object.defaultHeight * ratioLocal
+				};
+
+				var sliderContainerSelector = 'slider-container';
+
+				var sliderdivId = 'slider-div-' + slider.id;
+
+				$('#'+ sliderContainerSelector).append('<div id="'+sliderdivId+'" class="slider-div slider-div-page-' + slider.page + '">');
+				$('#'+sliderdivId).append('<ul id="slider-ul-' + slider.id +'" class="slider-ul">');
+									
+				$.each(object.images, function(index, image){
+					$('#slider-ul-' + slider.id).append('<li>');
+					$('#'+sliderdivId +' li').last().append('<img src="' + image.src + '" width="'+slider.width+'" height="'+slider.height+'"/>' );
+				});
+				
+	    		$('#slider-ul-' + slider.id).lightSlider({minSlide:1, maxSlide:1});
+
+	    		$('#'+sliderdivId).css('width', slider.width);
+	    		$('#'+sliderdivId).css('height', slider.height);
+	    		$('#'+sliderdivId).css('top', slider.top);
+	    		$('#'+sliderdivId).css('left', slider.left);
+	    		$('#'+sliderdivId).css('position', 'absolute');
+	    		$('#'+sliderdivId).css('display', 'none');	
+			}	
+    	});
+
+		$('.slider-div-page-' + paginaAtual).css('display', 'inline');
 	}
 }
