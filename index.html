@@ -4,6 +4,12 @@
     <link rel="stylesheet" href="livro-template/style/simples.css" type="text/css" />
     <link rel="stylesheet" href="livro-template/style/controles.css" type="text/css" />
     <link rel="stylesheet" href="livro-template/style/modal.css" type="text/css" />
+    <link rel="stylesheet" href="livro-template/style/lightSlider.css" type="text/css" />
+    <link rel="stylesheet" href="livro-template/style/slider.css" type="text/css" />
+
+    <script src="livro-template/js/jquery-1.11.1.min.js"></script>
+    <script src="livro-template/js/jquery.lightSlider.min.js"></script>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Livro</title>
   </head>
@@ -60,17 +66,16 @@
 
       <div id="divConteudo">
         <div id="divOED">
-         <a href="#divModalDialog" onclick="loadIFrame();" ><img id="iconeOED" src="livro-template/images/link.png" style="display:none"/></a>
+          <a href="#divModalDialog" onclick="loadIFrame();" ><img id="iconeOED" src="livro-template/images/link.png" style="display:none"/></a>
         </div>
       
         <canvas id="canvasPagina" class='enableWidgetConfiguration'>
             Browser não suporta Canvas!!!
         </canvas>
         
-        <div id="divSumario" class="divSumario">
+        <div id="divSumario" class="divSumario"></div>
       </div>
     </div>
-  </div>
     
   <div id="divModalDialog" class="modalDialog">
     <div id="divContainer">
@@ -78,6 +83,8 @@
       <iframe src="" name="iframe_a" id="iframe_a" class="center" tabindex="0">Browser não suporta iFrames!!!</iframe>
     </div>
   </div>
+
+  <div id="slider-container"></div>
   
   <script src="livro-template/js/modernizr-latest.js"></script>
 
@@ -97,7 +104,8 @@
       window.numPaginaCapaAnexo = 1;
     })();
   </script>
-    
+  
+  <script src="livro-template/js/slider.js"></script>
   <script src="livro-template/js/simples.js"></script>
   <script src="livro-template/js/widgets.js"></script>
   <script src="livro-template/js/sumario.js"></script>
