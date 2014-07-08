@@ -544,10 +544,10 @@ function loadSliders(paginaAtual, ratioLocal){
 				var slider = {
 					id: object.id,
 					page: object.page,
-					left: (canvas.offsetLeft + object.defaultLeft * ratioLocal),
-					top: (canvas.offsetTop + object.defaulttTop * ratioLocal),
-					width: object.defaultWidth * ratioLocal,
-					height: object.defaultHeight * ratioLocal
+					left: (canvas.offsetLeft + object.left * ratioLocal),
+					top: (canvas.offsetTop + object.top * ratioLocal),
+					width: object.width * ratioLocal,
+					height: object.height * ratioLocal
 				};
 
 				var sliderContainerSelector = 'slider-container';
