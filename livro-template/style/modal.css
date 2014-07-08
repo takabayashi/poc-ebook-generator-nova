@@ -9,6 +9,7 @@
 #divContainer {
 	height: 90%;
 	width: 80%;
+	position: relative;
 }
 
 #divOED {
@@ -61,9 +62,9 @@
 	-moz-box-shadow: 1px 1px 3px #000;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
-	top: 113px;
-	left: 458px;
-	width: 24px;
+	top: 0px;
+	right: 0px;
+	width: 44px;
 }
 
 .close:hover{

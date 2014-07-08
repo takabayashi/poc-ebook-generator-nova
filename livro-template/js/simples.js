@@ -110,8 +110,8 @@ document.onkeydown = function(event) {
 			document.getElementById("zoomFit").onclick.apply(document.getElementById("zoomFit"));
         	break;
 	    case 37:
-	    	document.getElementById("back").onclick.apply(document.getElementById("back"));
-	    	return false;
+	    	//document.getElementById("back").onclick.apply(document.getElementById("back"));
+	    	//return false;
 	        break;
 	    case 38:
 			if(paginaAtual > paginaCapa){
@@ -122,17 +122,17 @@ document.onkeydown = function(event) {
 			return false;
 			break;
 	    case 39:
-	    	document.getElementById("next").onclick.apply(document.getElementById("next"));
-	    	return false;
+	    	//document.getElementById("next").onclick.apply(document.getElementById("next"));
+	    	//return false;
 	    	break;
 	    case 40:
 			if(paginaAtual < qtdPaginasLivroAtual){
 				paginaAtual++;
 				
-				loadImgPagina(paginaAtual);
-				return false;
-				break;				
-			}	    	
+				loadImgPagina(paginaAtual);			
+			}
+			return false;
+			break;		    	
 	    case 107:
 	    	document.getElementById("zoomIn").onclick.apply(document.getElementById("zoomIn"));
 	    	break;
@@ -261,60 +261,45 @@ function loadImgPagina(paginaAtual){
 }
 
 function loadIFrame(url) {
-	/*
-	for(x=0;x<widgetIcon.lista.length;x++){
-		var widget = widgetIcon.lista[x];
-		if(paginaAtual == widget.pagina){
-			document.getElementById("iframe_a").src = widget.url;
-			iFrameAberto = true;
-			break;
-		}
-	}
-	*/
 	document.getElementById("iframe_a").src = url;
 	iFrameAberto = true;
 }
 
 function loadWidgetLinks(paginaAtual, ratioLocal){
 	
-	if(livroAtual==1){
-		//document.getElementById("divOED").style.display = "none";
-		//document.getElementById("iconeOED").style.display = "none";
-		
+	if(livroAtual==1){		
 		for(x=0;x<widgetIcon.lista.length;x++){
 			var widget = widgetIcon.lista[x];
-			
+			var idDiv = widget.pagina + "-" + x;
+			var d = document.getElementById("divOED" + idDiv);
+							
 			if(paginaAtual == widget.pagina){
-								
-				widget.leftLocation = widget.defaultLeftLocation * ratioLocal;
-				widget.topLocation = widget.defaultTopLocation * ratioLocal;
-				widget.width = widgetIcon.defaultWidth * ratioLocal;
-				widget.height = widgetIcon.defaultHeight * ratioLocal;
+				if(!d){ //se o widget nao existe, Cria!								
+					widget.leftLocation = widget.defaultLeftLocation * ratioLocal;
+					widget.topLocation = widget.defaultTopLocation * ratioLocal;
+					widget.width = widgetIcon.defaultWidth * ratioLocal;
+					widget.height = widgetIcon.defaultHeight * ratioLocal;
 				
-				createDiv(widget.pagina, x, widget.topLocation, widget.leftLocation, widget.height, widget.width, widget.url);
-
-				/*
-				document.getElementById("divOED").style.top = canvas.offsetTop + widget.topLocation + 'px';
-				document.getElementById("divOED").style.left = canvas.offsetLeft  + widget.leftLocation + 'px';
-				
-				document.getElementById("iconeOED").style.height = widget.height +'px';
-				document.getElementById("iconeOED").style.width = widget.width + 'px';
-				
-				document.getElementById("divOED").style.display = "block";
-				document.getElementById("iconeOED").style.display = "block";
-				
-				break;
-				*/
+					createDiv(idDiv, widget.topLocation, widget.leftLocation, widget.height, widget.width, widget.url);
+				} else{ //se o widget ja existe, altera para Block
+					document.getElementById("divOED" + idDiv).style.display = "block";
+					document.getElementById("iconeOED" + idDiv).style.display = "block";										
+				}	
+			} else{				
+				if(d){ //se o widget existe e nao é da pagina corrente, altera para None
+					document.getElementById("divOED" + idDiv).style.display = "none";
+					document.getElementById("iconeOED" + idDiv).style.display = "none";					
+				}
 			}
 		}
 	}
 	
 }
 
-function createDiv(page, id, top, left, height, width, url){
+function createDiv(idDiv, top, left, height, width, url){
 	//cria div do widget
 	var newDiv = document.createElement("div");
-	newDiv.id = "divOED" + page + "-" + id;
+	newDiv.id = "divOED" + idDiv;
 	newDiv.style.top = canvas.offsetTop + top + 'px';
 	newDiv.style.left = canvas.offsetLeft  + left + 'px';
 	newDiv.style.width = width + 'px';
@@ -329,9 +314,9 @@ function createDiv(page, id, top, left, height, width, url){
 
 	//cria tag a para o widget
 	var newTagA = document.createElement("a");
-	newTagA.id = "iconeOED" + page + "-" + id;
+	newTagA.id = "iconeOED" + idDiv;
 	newTagA.href = "#divModalDialog";
-	newTagA.setAttribute("onclick","loadIFrame(url)");
+	newTagA.setAttribute("onclick","loadIFrame("+"'"+url+"'"+")");
 	newTagA.style.height = height +'px';
 	newTagA.style.width = width + 'px';
 	newTagA.style.display = "block";
