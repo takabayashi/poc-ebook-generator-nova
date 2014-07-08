@@ -211,6 +211,7 @@ function loadImgPagina(paginaAtual){
 			
 			loadWidgetLinks(paginaAtual, ratio);
 			loadSumario(paginaAtual, ratio);
+			loadSliders(paginaAtual, ratio);
 		}
 	};
 	
@@ -229,6 +230,7 @@ function loadImgPagina(paginaAtual){
 			
 			loadWidgetLinks(paginaAtual, ratio);
 			loadSumario(paginaAtual, ratio);
+			loadSliders(paginaAtual, ratio);
 		}
 	};
 	
@@ -522,8 +524,9 @@ function loadSumario(paginaAtual, ratioLocal){
 function loadSliders(paginaAtual, ratioLocal){
 	
 	if(livroAtual==1){
-		$('.slider-div').css('display', 'none');
-		
+		$('.slider-div').remove();
+		var sliderContainerSelector = 'slider-container';
+
 		$.each(window.sliders, function(index, object){
 			if(object.page == paginaAtual){
 				var slider = {
@@ -534,8 +537,6 @@ function loadSliders(paginaAtual, ratioLocal){
 					width: object.width * ratioLocal,
 					height: object.height * ratioLocal
 				};
-
-				var sliderContainerSelector = 'slider-container';
 
 				var sliderdivId = 'slider-div-' + slider.id;
 
