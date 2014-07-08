@@ -310,6 +310,7 @@ function createDiv(idDiv, top, left, height, width, url){
 	newDiv.style.position = "absolute";
 	newDiv.style.zIndex = 999;
 	newDiv.style.backgroundColor = "rgba(0,255,0,0.5)";
+	newDiv.className = "gps_ring";
 
 	document.getElementById("divConteudo").appendChild(newDiv);
 	//--------------------------------------------------------
