@@ -206,17 +206,11 @@
 
 .divSumarioItem{
 	position: absolute;
-	background: rgba(0, 0, 0, 0.5); 
+	background: rgba(0, 0, 0, 0); 
 	display: block;
+	z-index: 11;
 }
 
 .divSumarioItem:hover{
 	cursor: pointer;
-}
-
-.divSumario{
-	position: absolute;
-	background: rgba(0, 0, 0, 0); 
-	z-index: 11;
-	display: block;
 }

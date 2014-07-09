@@ -31,8 +31,8 @@ body {
     height: 18px;
     width: 18px;
     position: absolute;
-    --left:40px;
-    --top:214px;
+    left:100px;
+    top:214px;
 }
 .gps_ring{
     -webkit-animation-name: pulsate;

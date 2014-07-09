@@ -488,35 +488,25 @@ function loadIFrameManual() {
 function loadSumario(paginaAtual, ratioLocal){
 	if(livroAtual==1){
 		//exclui todas as divs anteriores
-		document.getElementById("divSumario").innerHTML = "";
+		$(".divSumarioItem").remove();
 		
 		for(x=0;x<sumario.itens.length;x++){
 			var item = sumario.itens[x];
 			
 			if(paginaAtual == item.pagina){
-				//altera o tamanho do sumario
-				document.getElementById("divSumario").style.height = canvas.height +'px';
-				document.getElementById("divSumario").style.width = canvas.width +'px';
-				document.getElementById("divSumario").style.top = canvas.offsetTop + 'px';
-				document.getElementById("divSumario").style.left = canvas.offsetLeft  + 'px';
-			
-				//cria uma div para cada item do sumario
-				var nomeDiv = "divSumarioItem"+x;
-				document.getElementById("divSumario").innerHTML += "<div onclick='go("+item.paginaTarget+")' class='divSumarioItem' id='"+nomeDiv+"'></div>";
-				
-				//altera o tamanho e localizacao da area do item do sumario
-				item.leftLocation = item.defaultLeftLocation * ratioLocal;
-				item.topLocation = item.defaultTopLocation * ratioLocal;
-				document.getElementById(nomeDiv).style.top = item.topLocation + 'px';
-				document.getElementById(nomeDiv).style.left = item.leftLocation + 'px';
-				
-				item.width = sumario.itens[x].width * ratioLocal;
-				item.height = sumario.itens[x].height * ratioLocal;
-				document.getElementById(nomeDiv).style.width = item.width + "px";
-				document.getElementById(nomeDiv).style.height = item.height + "px";
-				
-				document.getElementById(nomeDiv).style.background = sumario.divStyleBackgroudColor;
+				//cria div do widget
+				var sumarioItem = document.createElement("div");
+				sumarioItem.id = "divSumarioItem" + x;
+				sumarioItem.style.top = (canvas.offsetTop + item.top * ratioLocal) + 'px';
+				sumarioItem.style.left =  (canvas.offsetLeft + item.left * ratioLocal) + 'px';
+				sumarioItem.style.width = item.width * ratioLocal + 'px';
+				sumarioItem.style.height =item.height * ratioLocal + 'px';
+				sumarioItem.classList.add('divSumarioItem');
+				sumarioItem.setAttribute("target", item.paginaTarget);
 
+				sumarioItem.onclick = function(){go(this.getAttribute("target"));};
+
+				$("#divConteudo").append(sumarioItem);
 			}
 		}
 	}
