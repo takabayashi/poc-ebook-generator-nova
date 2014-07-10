@@ -5,11 +5,10 @@ var imgWidth = imgDefaultWidth;
 var imgHeight = imgDefaultHeight;
 var paginaCapa = 0;
 var paginaAtual = paginaCapa;
-var zoomRatio = 1;
-var ratio = 1;
+var ratio = window.defaultRatio;
 var maxRatio = 2.00;
 var minRatio = 0.75;
-var stepRatio = 0.15;
+var stepRatio = 0.1;
 var principalWidth = window.innerWidth; //screen.width * 0.8;
 var principalHeight = window.innerHeight; //screen.height * 0.8;
 var livroAtual = 1;
@@ -212,6 +211,7 @@ function loadImgPagina(paginaAtual){
 			loadWidgetLinks(paginaAtual, ratio);
 			loadSumario(paginaAtual, ratio);
 			loadSliders(paginaAtual, ratio);
+			loadGalleries(paginaAtual, ratio);
 		}
 	};
 	
@@ -231,13 +231,14 @@ function loadImgPagina(paginaAtual){
 			loadWidgetLinks(paginaAtual, ratio);
 			loadSumario(paginaAtual, ratio);
 			loadSliders(paginaAtual, ratio);
+			loadGalleries(paginaAtual, ratio);
 		}
 	};
 	
 	document.getElementById("zoomFit").onclick = function() {
 		imgWidth = imgDefaultWidth; 
 		imgHeight = imgDefaultHeight;
-		ratio = 1;
+		ratio = window.defaultRatio;
 		
 		canvas.width  = imgWidth;
 		canvas.height = imgHeight;
@@ -256,6 +257,8 @@ function loadImgPagina(paginaAtual){
 	loadSumario(paginaAtual, ratio);
 
 	loadSliders(paginaAtual, ratio);
+
+	loadGalleries(paginaAtual, ratio);
 	
 	localStorage.ultimaPagina = paginaAtual;
 	localStorage.livroAtual = livroAtual;
@@ -414,7 +417,7 @@ document.getElementById("modalCloseLink").onclick = function(){
 	//altera a funcao de unload
 	window.onunload = function(){console.log("desabilitado onunload")};
 	
-	location.href='index.html';
+	//location.href='index.html';
 }
 
 function resizePrincipal(){
@@ -551,5 +554,48 @@ function loadSliders(paginaAtual, ratioLocal){
     	});
 
 		$('.slider-div-page-' + paginaAtual).css('display', 'inline');
+	}
+}
+
+function loadGalleries(paginaAtual, ratioLocal){
+	
+	if(livroAtual==1){
+		$('.gallery-div').remove();
+		var galleryContainerSelector = 'gallery-container';
+
+		$.each(window.galleries, function(index, object){
+			if(object.page == paginaAtual){
+				var gallery = {
+					id: object.id,
+					page: object.page,
+					left: (canvas.offsetLeft + object.left * ratioLocal),
+					top: (canvas.offsetTop + object.top * ratioLocal),
+					width: object.width * ratioLocal,
+					height: object.height * ratioLocal
+				};
+
+				var galleryDivId = 'gallery-div-' + gallery.id;
+
+				$('#'+ galleryContainerSelector).append('<div id="'+galleryDivId+'" class="gallery-div gallery-div-page-' + gallery.page + '">');					
+	    		
+	    		$('#'+galleryDivId).css('width', gallery.width);
+	    		$('#'+galleryDivId).css('height', gallery.height);
+	    		$('#'+galleryDivId).css('top', gallery.top);
+	    		$('#'+galleryDivId).css('left', gallery.left);
+	    		$('#'+galleryDivId).css('position', 'absolute');
+	    		$('#'+galleryDivId).css('display', 'none');
+	    		$('#'+galleryDivId).css('z-index', '100');
+
+				$('#'+galleryDivId).click(function(){
+					$('#' + galleryDivId).lightGallery({
+			            dynamic:true,
+			            counter: true,
+			            dynamicEl: object.images
+			        });
+				});
+			}	
+    	});
+
+		$('.gallery-div-page-' + paginaAtual).css('display', 'inline');
 	}
 }

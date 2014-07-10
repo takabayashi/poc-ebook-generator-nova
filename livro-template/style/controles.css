@@ -211,6 +211,6 @@
 	z-index: 11;
 }
 
-.divSumarioItem:hover{
+.divSumarioItem:hover, .gallery-div:hover{
 	cursor: pointer;
 }

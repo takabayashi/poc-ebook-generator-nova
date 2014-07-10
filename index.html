@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="livro-template/style/modal.css" type="text/css" />
     <link rel="stylesheet" href="livro-template/style/lightSlider.css" type="text/css" />
     <link rel="stylesheet" href="livro-template/style/slider.css" type="text/css" />
+    <link rel="stylesheet" href="livro-template/gallery/css/lightGallery.css" type="text/css" />
 
     <script src="livro-template/js/jquery-1.11.1.min.js"></script>
     <script src="livro-template/js/jquery.lightSlider.min.js"></script>
+    <script src="livro-template/gallery/js/lightGallery.min.js"></script>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Livro</title>
@@ -84,7 +86,8 @@
   </div>
 
   <div id="slider-container"></div>
-  
+  <div id="gallery-container"></div>
+
   <script src="livro-template/js/modernizr-latest.js"></script>
 
   <script>
@@ -92,8 +95,15 @@
       //configuracoes gerais
       window.qtdPaginas = 20;
       window.numPaginaCapa = 0;
+
       window.imgDefaultWidth = (3000/2); //tamanho da imagem
       window.imgDefaultHeight = (2000/2); //tamanho da imagem
+
+      window.defaultRatio = window.innerHeight / window.imgDefaultHeight;
+
+      window.imgDefaultWidth = window.imgDefaultWidth * defaultRatio; //tamanho da imagem
+      window.imgDefaultHeight = window.imgDefaultHeight * defaultRatio; //tamanho da imagem
+
       window.tituloPrincipal = 'Poc Extra';
       window.imagesPath = 'books/5/images'
 
@@ -105,6 +115,7 @@
   </script>
   
   <script src="livro-template/js/slider.js"></script>
+  <script src="livro-template/js/galleries.js"></script>
   <script src="livro-template/js/simples.js"></script>
   <script src="livro-template/js/widgets.js"></script>
   <script src="livro-template/js/sumario.js"></script>
